@@ -1,0 +1,25 @@
+@import "variables.scss";
+
+.main {
+  padding: 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.habit {
+  border: 1px solid white;
+  padding: 8px;
+  border-radius: 5px;
+  background: $dark;
+  color: $white;
+}
+
+.habits {
+  max-width: 300px;
+}
+
+.nav {
+  padding: 16px;
+  background: $primary;
+  color: $white;
+}
