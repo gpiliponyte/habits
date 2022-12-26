@@ -11,6 +11,10 @@ export default function Home() {
 
     const habitElements = habits.map(h => <div className={styles.habit}
                                                key={h.id}>{`${h.name} : ${h.streak} days streak`}</div>)
+
+    const checklistItems = habits.map(h => <div key={h.id}>
+        <input id={h.id} type="checkbox"/><label htmlFor={h.id}>{h.name}</label>
+    </div>)
     return (
         <>
             <Head>
@@ -24,7 +28,15 @@ export default function Home() {
             </nav>
             <main className={styles.main}>
                 <div className={styles.habits}>
-                    {habitElements}
+                    <h3>Your Habit Checklist</h3>
+                    <form>
+                        <div className={styles.checkList}>
+                            {checklistItems}
+                        </div>
+                        <div className={styles.btnWrapper}>
+                            <button className={styles.btn}>Submit</button>
+                        </div>
+                    </form>
                 </div>
             </main>
         </>
