@@ -9,10 +9,29 @@
 
 .habit {
   border: 1px solid white;
-  padding: 8px;
+  padding: 24px;
   border-radius: 5px;
   background: $dark;
   color: $white;
+  margin-left: 24px;
+  strong {
+    font-size: 16px;
+  }
+  p {
+    color: $white
+  }
+}
+
+.habitCards {
+  margin-top: 5rem;
+  h1 {
+    margin-bottom: 4rem;
+  }
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
 }
 
 .habits {
