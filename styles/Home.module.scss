@@ -14,12 +14,23 @@
   background: $dark;
   color: $white;
   margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   strong {
     font-size: 16px;
   }
   p {
     color: $white
   }
+  .habitTitle {
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+  }
+}
+
+.flame {
+  margin-right: 0.25rem;
 }
 
 .habitCards {
@@ -27,6 +38,9 @@
   h1 {
     margin-bottom: 4rem;
   }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cards {
