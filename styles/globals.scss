@@ -13,3 +13,8 @@ html {
 h1, h2, h3, h4, h5, h6, p, label {
   color: $black;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+}
