@@ -1,8 +1,13 @@
 import styles from "../styles/Home.module.scss";
+import Link from "next/Link";
+import { PATHS } from "../paths";
 
 const Header = () => (
   <nav className={styles.nav}>
-    <h1>My Habits</h1>
+    <Link href={PATHS.HOME}>
+      <h1>My Habits</h1>
+    </Link>
+
     <div className={styles.loginContainer}>
       <input
         className={styles.input}
