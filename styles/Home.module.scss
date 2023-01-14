@@ -21,7 +21,7 @@
     font-size: 16px;
   }
   p {
-    color: $white
+    color: $white;
   }
   .habitTitle {
     margin-bottom: 1rem;
@@ -54,7 +54,7 @@
     margin-left: 32px;
     font-size: 24px;
   }
-  input[type=checkbox] {
+  input[type="checkbox"] {
     transform: scale(3);
     margin-bottom: 24px;
     accent-color: $primary;
@@ -76,21 +76,45 @@
 }
 
 .btn {
-  padding: 16px 64px;
   border-radius: 5px;
-  font-size: 16px;
-  margin-top: 32px;
-  background: $gradient;
   border: none;
   color: $white;
-  font-weight: 500;
   letter-spacing: 1px;
+}
+
+.submitBtn {
+  margin-top: 32px;
+  padding: 16px 64px;
+  font-weight: 500;
+  font-size: 16px;
+  background: $gradient;
+}
+
+.btnLogin {
+  background: $dark;
+  padding: 4px 8px;
 }
 
 .nav {
   padding: 16px;
   background: $primary;
-  h1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  h1 {
     color: $white;
+  }
+  align-items: center;
+}
+
+.input {
+  padding: 4px;
+  border-radius: 4px;
+  border: none;
+}
+
+.loginContainer {
+  * {
+    margin-left: 8px;
   }
 }
