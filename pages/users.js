@@ -4,7 +4,7 @@ const Users = ({ users, error }) => {
   return (
     <main className={styles.main}>
       {error ? (
-        error
+        <h1>{error}</h1>
       ) : (
         <ul>
           {users.map((u) => (
