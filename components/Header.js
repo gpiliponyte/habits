@@ -17,6 +17,11 @@ const Header = () => {
     console.log(errors);
   };
 
+  const onError = (e) => {
+    console.log(e);
+    console.log("error happened");
+  };
+
   return (
     <nav className={styles.nav}>
       <Link href={PATHS.HOME}>
@@ -24,7 +29,7 @@ const Header = () => {
       </Link>
 
       <div className={styles.loginContainer}>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit, onError)}>
           <input
             {...register("email", { required: true })}
             className={styles.input}
